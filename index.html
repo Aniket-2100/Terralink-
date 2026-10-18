@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraLink | Subterranean Capillary Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Custom Browser Favicon -->
+    <link rel="icon" type="image/png" href="terralink-logo.png">
+    <!-- Three.js Libraries required for the 3D Simulation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Updated Navigation (No Portal Login) -->
+    <nav class="spacex-nav" id="home">
+        <div class="logo-container">
+            <div class="logo-text">TERRA<span>LINK</span></div>
+            <svg class="logo-circuit" viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 4 6 L 35 6 L 50 18 L 85 18 L 100 6 L 140 6 L 155 18 L 196 18" fill="none" stroke="#ffffff" stroke-width="1.5" />
+                <circle cx="4" cy="6" r="2.5" fill="#ffffff"/>
+                <circle cx="50" cy="18" r="2.5" fill="#ffffff"/>
+                <circle cx="85" cy="18" r="2.5" fill="#ffffff"/>
+                <circle cx="100" cy="6" r="2.5" fill="#ffffff"/>
+                <circle cx="140" cy="6" r="2.5" fill="#ffffff"/>
+                <circle cx="155" cy="18" r="2.5" fill="#ffffff"/>
+                <circle cx="196" cy="18" r="2.5" fill="#ffffff"/>
+            </svg>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#problem">PROBLEM</a>
+            <a href="architecture.html">ABOUT</a>
+            <a href="#impact">IMPACT</a>
+        </div>
+        
+        <!-- Empty right nav to keep centering balanced -->
+        <div class="nav-right"></div>
+    </nav>
+
+    <!-- Full-Screen Hero Section -->
+    <header class="fullscreen-hero reveal active">
+        <!-- The 3D Simulation canvas injects here -->
+        <div id="simulation-bg"></div>
+
+        <div class="hero-overlay-content">
+            <span class="date-tag">THE VISION</span>
+            <h1>UPGRADING HUMAN CIVILIZATION.</h1>
+            <p style="color: #fff; max-width: 650px; margin-bottom: 2.5rem; font-size: 1.15rem;">Surface streets belong to humans, not cargo. TerraLink is a subterranean magnetic-levitation network designed to permanently eliminate urban gridlock, drone noise pollution, and delivery casualties.</p>
+            
+            <a href="#problem" class="watch-btn">EXPLORE OVERVIEW <span class="bounce-arrow">↓</span></a>
+        </div>
+    </header>
+
+    <!-- Section 1: The Problem -->
+    <section id="problem" class="core-section reveal bg-image-section" style="background-image: url('drone.png');">
+        <div class="bg-overlay"></div>
+        <div class="grid-container" style="position: relative; z-index: 2;">
+            <div class="text-block">
+                <span class="section-label">01 / THE CRISIS</span>
+                <h2 style="color: #fff;">The Surface is Broken.</h2>
+                <p style="color: #ddd;">The current gig economy pits human safety against algorithmic time limits, resulting in fatal surface accidents and permanent gridlock. The proposed alternative—aerial delivery drones—is a false utopia.</p>
+                <p style="color: #ddd;">Drones trade ground chaos for a sky filled with buzzing plastic. They generate massive noise pollution, face severe weight restrictions, and are highly vulnerable to weather anomalies. Civilization requires a solution that removes cargo from human spaces entirely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Core Tech -->
+    <section id="about" class="core-section reveal bg-darker">
+        <div class="grid-container full-width">
+            <div class="text-block" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <span class="section-label">02 / THE CORE TECH</span>
+                <h2>Subterranean Mag-Lev Pipelines.</h2>
+                <p style="margin: 0 auto 2rem;">By moving logistics underground into highly efficient 24-inch micro-tunnels, we can achieve extreme delivery speeds using a fraction of the energy.</p>
+                <a href="architecture.html" class="watch-btn" style="color: #000; background: #fff; border-color: #fff;">READ THE ARCHITECTURE MANUAL →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Impact -->
+    <section id="impact" class="core-section reveal bg-image-section" style="background-image: url('human.png');">
+        <div class="bg-overlay"></div>
+        <div class="grid-container" style="position: relative; z-index: 2;">
+            <div class="text-block">
+                <span class="section-label">03 / THE IMPACT</span>
+                <h2 style="color: #fff;">Reclaiming Our Cities.</h2>
+                <p style="color: #ddd;">TerraLink is not just about faster logistics; it is about restoring the pedestrian experience. By eliminating delivery vans and aerial drones, we reduce urban carbon emissions, eliminate traffic fatalities, and create quieter, cleaner, and safer environments for human life to thrive.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="legal-box" style="text-align: center;">
+            <p>&copy; 2026 Aniket Sharma. TerraLink Infrastructure Operations.</p>
+        </div>
+    </footer>
+
+    <!-- Connects the 3D interaction script -->
+    <script src="script.js"></script>
+</body>
+</html>
